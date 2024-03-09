@@ -6,7 +6,7 @@
         flex-direction: column;
         align-items: center;
         transition-property: opacity;
-        transition-duration: 2s;
+        transition-duration: 1s;
     }
     .sign-heading {
         font-size: 1.5rem;
@@ -62,7 +62,7 @@
         flex-direction: column;
         align-items: center;
         transition-property: opacity;
-        transition-duration: 2s;
+        transition-duration: 1s;
     }
     .sign-heading {
         font-size: 1.2rem;

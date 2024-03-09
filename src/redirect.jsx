@@ -17,7 +17,7 @@ export default function Card() {
   useEffect(() => {
     setTimeout(() => {
       setOpacity(1);
-    }, 200);
+    }, 100);
   });
 
   const incrementRotationSpeed = amount => {
@@ -46,7 +46,7 @@ export default function Card() {
       const data = await res.json();
       setTimeout(() => {
         navigate("/predicted", {state: data});
-      }, 2400);
+      }, 1400);
     } catch (error) {
       alert(error.message);
     }

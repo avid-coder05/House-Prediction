@@ -10,7 +10,7 @@ function LogIn() {
   useEffect(() => {
     setTimeout(() => {
       setOpacity(1);
-    }, 400);
+    }, 100);
   }, []);
 
   async function handleSubmit(e) {
@@ -42,7 +42,7 @@ function LogIn() {
             setOpacity(0);
             setTimeout(() => {
               navigate("/redirect");
-            }, 2400);
+            }, 1400);
           }
         }
       }
@@ -52,12 +52,11 @@ function LogIn() {
   }
 
   function handleSignUp() {
-    setTimeout(() => {
-      setOpacity(0);
-    }, 400);
+    setOpacity(0);
+
     setTimeout(() => {
       navigate("/sign-up");
-    }, 2500);
+    }, 1500);
   }
 
   return (

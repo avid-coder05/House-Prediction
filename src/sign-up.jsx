@@ -10,7 +10,7 @@ export default function Signup() {
     useEffect(() => {
         setTimeout(() => {
             setOpacity(1);
-        }, 200);
+        }, 10);
     }, []);
 
     async function handleSubmit(e) {
@@ -61,7 +61,7 @@ export default function Signup() {
         setOpacity(0);
         setTimeout(() => {
             navigate("/");
-        }, 2400);
+        }, 1400);
     }
 
     return (
