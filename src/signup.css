@@ -1,0 +1,108 @@
+@media (orientation: portrait){
+    .sign-super-container {
+        min-height: 98vh;
+        min-width: 98vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition-property: opacity;
+        transition-duration: 2s;
+    }
+    .sign-heading {
+        font-size: 1.5rem;
+        position: relative;
+        top: 5vh;
+        text-align: center;
+        padding-top: 2vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .sign-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 15vh;
+        align-items: center;
+        min-height: 70%;
+        max-width: 80%;
+        padding: 3vh 2vw;
+        background-color: #461220;
+        border: 0.5vh double #FFECD1;
+        border-radius: 20vh;
+    }
+    .sign-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        max-width: 100%;
+    }
+    .sign-label {
+        margin: 2vh;
+    }
+    .sign-input {
+        margin: 1.5vh;
+        max-width: 55%;
+    }
+    .sign-buttons {
+        display: flex;
+        max-width: 60%;
+        justify-content: space-between;
+        margin: 2vh;
+        padding-bottom: 2vh;
+    }
+}
+
+@media (orientation: landscape){
+    .sign-super-container {
+        min-height: 80vh;
+        min-width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition-property: opacity;
+        transition-duration: 2s;
+    }
+    .sign-heading {
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 1vh;
+        padding-left: 3vh;
+        padding-right: 3vh;
+    }
+    .sign-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90%;
+        width: 35%;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        background-color: #461220;
+        border: 0.5vh double #FFECD1;
+        border-radius: 20vh;
+    }
+    .sign-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        max-width: 80%;
+    }
+    .sign-label {
+        margin: 1vh;
+    }
+    .sign-input {
+        margin: 1.5vh;
+        max-width: 70%;
+    }
+    .sign-buttons {
+        display: flex;
+        width: 20vw;
+        justify-content: space-evenly;
+        margin: 2vh;
+        padding-bottom: 2vh;
+    }
+}

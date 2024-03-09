@@ -1,0 +1,1 @@
+{'SquareFeet': 2798, 'Bedrooms': 3, 'Neighborhood': 'Rural', 'Bathrooms': 3}

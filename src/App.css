@@ -1,0 +1,120 @@
+html {
+  background-color: #001524;
+}
+.login-container, h1 {
+    transition-property: opacity;
+    transition-duration: 2s;
+}
+
+@media (orientation: portrait){
+  * {
+    font-size: 1.1rem;
+  }
+  .login-super-container {
+    max-width: 98vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    color: white;
+    font-size: 15rem;
+  }
+  .login-container {
+    background: linear-gradient(50deg, #770088, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20vh;
+    min-height: 40vh;
+    min-width: 60vw;
+    border-radius: 20vh;
+    border: 0.3vh solid white;
+    transition-property: opacity;
+    transition-duration: 2s;
+  }
+  .login-form {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 60%;
+    position: relative;
+  }
+  .login-label {
+    margin: 1vh;
+  }
+  .login-input {
+    width: 90%;
+  }
+  .login-button {
+    margin: 1.5vh;
+  }
+  .errormsg {
+    text-align: center;
+  }
+}
+
+@media (orientation: landscape){
+  * {
+    font-size: 1.2rem;
+  }
+  .login-super-container {
+    width: 98vw;
+    min-height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    color: white;
+    font-size:2em;
+    transition-property: opacity;
+    transition-duration: 2.5s;
+  }
+  .login-container {
+    background: linear-gradient(50deg, #770088, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    width: 60%;
+    border-radius: 20vh;
+    border: 0.3vh solid white;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+  }
+  .login-form {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 60%;
+    position: relative;
+  }
+  .login-label {
+    margin: 1vh;
+  }
+  .login-input {
+    width: 90%;
+  }
+  .login-button {
+    margin: 1.5vh;
+  }
+  .errormsg {
+    text-align: center;
+  }
+}
