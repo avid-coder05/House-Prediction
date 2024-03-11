@@ -68,7 +68,7 @@ export default function Predicted() {
             </div>
             <div className="predicted-main" style={{ opacity:opacity }}>
                 <h1>Predicted House Price: </h1>
-                <h3>{number.prediction}</h3>
+                <h3>$ {number.prediction}</h3>
             </div>
             <div className="predicted-animation">
                 <Canvas>
