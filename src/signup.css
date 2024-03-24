@@ -52,6 +52,9 @@
         margin: 2vh;
         padding-bottom: 2vh;
     }
+    .errormsg {
+        margin-bottom: 5vh;
+    }
 }
 
 @media (orientation: landscape){
@@ -104,5 +107,8 @@
         justify-content: space-evenly;
         margin: 2vh;
         padding-bottom: 2vh;
+    }
+    .errormsg {
+        margin-bottom: 5vh;
     }
 }

@@ -5,6 +5,7 @@ import './signup.css';
 export default function Signup() {
     const [border, setBorder] = useState('#ffffff');
     const [opacity, setOpacity] = useState(0);
+    const [errorMessage, setErrorMessage] = useState(null);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -37,16 +38,23 @@ export default function Signup() {
                     body: JSON.stringify(testForm)
                 });
 
+                const data = await res.json();
+
                 if (!res.ok) {
                     throw new Error("Failed add credentials");
                 }
                 else {
-                    const data = await res.json();
-                    if(data.login) {
-                        setOpacity(0);
-                        setTimeout(() => {
-                            navigate("/");
-                        }, 3000);
+
+                    if('error' in data) {
+                        setErrorMessage(data.error);
+                    }
+                    else {
+                        if(data.login) {
+                            setOpacity(0);
+                            setTimeout(() => {
+                                navigate("/");
+                            }, 3000);
+                        }
                     }
                 }
 
@@ -76,6 +84,11 @@ export default function Signup() {
                     <button type="submit" className="sign-button">Submit</button>
                     <button type="button" className="sign-button" onClick={handleBack}>Back</button>
                 </div>
+                {errorMessage && (
+                    <div className="errormsg" style={{color: 'red'}}>
+                    {errorMessage}
+                    </div>
+                )}
             </form>
         </div>
         </div>

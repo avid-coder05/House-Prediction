@@ -69,11 +69,11 @@ function LogIn() {
           <label className="login-label">Password:</label> <input type="password" name="password" className="login-input"/>
           <button type="submit" className="login-button">Submit</button>
           <button type="button" onClick={handleSignUp} className="login-button">Sign Up</button>
-        {errorMessage && (
-          <div className="errormsg" style={{color: 'red'}}>
-            {errorMessage}
-          </div>
-        )}
+          {errorMessage && (
+            <div className="errormsg" style={{color: 'red'}}>
+              {errorMessage}
+            </div>
+          )}
         </form>
       </div>
     </div>
